@@ -47,7 +47,7 @@ export default  class TodoApp extends React.Component{
     render(){
         let items = [];  
         for(var i=0;i<this.state.list.length;i++){
-            items.push(<li>{this.state.list[i]}</li>);
+            items.push(<li key={i}>{this.state.list[i]}</li>);
         }
        
         return (
